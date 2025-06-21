@@ -18,15 +18,22 @@
       color: white;
       padding: 1.5rem 0;
       text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
     .container {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
+      animation: slideUp 2s ease;
     }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 0;
+      color: #cbd5e1;
     }
     p {
       font-size: 1.2rem;
@@ -36,13 +43,28 @@
       text-align: center;
       padding: 2rem 0;
       color: #777;
+      animation: fadeIn 3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to chandrapkap.com</h1>
-    <p>Just a fun corner of the internet ✨</p>
+    <h1>This Page is Responsive.</h1>
+    <h3>I’m Still Learning.</h3>
   </header>
   <div class="container">
     <h2>About Me</h2>
